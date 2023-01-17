@@ -20,3 +20,4 @@ function grupoRock(grupo){
 }
 
 console.log(`Pertenece al ${grupoRock(g)}`);
+
