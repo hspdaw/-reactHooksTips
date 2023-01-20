@@ -1,31 +1,32 @@
-const bRock = (b) =>{
-    return ` Band: ${b} `
+// Desestructuración
+// Asignación Desestructurante
+
+const band = {
+    n: 'Soulfly',
+    age: 24,
+    style: 'Heavy'
+};
+
+const { n , style} = band;
+console.log(n);
+console.log(style);
+
+//Otro ejemplo
+
+const usarContexto = ({clave, nombre, edad, rango = 'Warlock'}) =>{
+    return{
+        nombreClave: clave,
+        anios: edad,
+        magias:{
+            fuego: 'activo',
+            trueno: 'desactivado'
+        }
+    }
 }
 
-const bRock2 = (b) => ` Band 2: ${b} `
-
-const bRock3 = () => ` No Band ` 
-
-console.log(bRock('Metallica'));
-console.log(bRock2('Megadeth'));
-console.log(bRock3());
-
-
-const getBand = () => ({
-    style: 'Heavy metal',
-    nameB: 'Metallica'
-})
-
-const b = getBand();
-console.log(b);
-
-const getActiveBand = (b) =>({
-    style: 'Heavy',
-    nameB: b,
-})
-
-const activeBand = getActiveBand('Soulfly');
-console.log(activeBand);
+const {nombreClave, anios, magias: {fuego, trueno}} = usarContexto(band);
+console.log(nombreClave, anios);
+console.log(fuego, trueno);
 
 
 //https://www.udemy.com/course/react-cero-experto/learn/lecture/19629484#announcements
