@@ -13,4 +13,4 @@ console.log(arr3);
 
 
 //https://www.udemy.com/course/react-cero-experto/learn/lecture/19629484#announcements
-//https://github.com/Klerith/react-intro-javascript/blob/master/.gitignore
+//https://github.com/Klerith/react-intro-javascript
