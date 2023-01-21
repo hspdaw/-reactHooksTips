@@ -1,34 +1,23 @@
-const bandas = ['Queen', 'Korn', 'HammerFall'];
-
-const [ QueenOfStoneAge ] = bandas;
-console.log(QueenOfStoneAge);
-
-const [ ,,HF ] = bandas;
-console.log(`Last position: ${HF}`);
+//import { bandas } from './data/bandas'
 
 
 
-const retornarArr = () =>{
-    return ['ABC', 123456];
-}
-const [letras, numeros] = retornarArr();
-console.log(numeros, letras);
+//write imp and select, then use tabs to move
+//import { bandas } from "./data/bandas";
 
 
+import { bandas } from "./data/bandas";
+//write bandas and select from the list the automatic definition
+//bandas
 
+//console.log(bandas);
 
-const usaState = (valor) => {
-    return [valor, ()=> console.log('Hello mundo')]
-}
-const arr = usaState('Stratovarius')
-console.log(arr); 
-//Call the function from arr, return the second argument wich is a function
-arr[1]();
+/* V1 
+const getBandaById = (id) => bandas.find((band)=>{
+        return band.id === id ? true: false;
+}); */
+const getBandaById = (id) => bandas.find(band=>band.id === id)
+console.log(getBandaById(2));
 
-const [ nombre , sayHi ] = usaState('Ramones')
-console.log(nombre);
-sayHi();
-
-
-//https://www.udemy.com/course/react-cero-experto/learn/lecture/19629484#announcements
-//https://github.com/Klerith/react-intro-javascript/blob/master/.gitignore
+const getBandaByDiscos = (discs) => bandas.filter(banda => banda.discs === discs)
+console.log(getBandaByDiscos(22));
