@@ -1,4 +1,4 @@
-import { getBandaById } from "./bases/08-Imp-exp";
+import { getBandaById } from "./bases/08_Imp-exp";
 
 /*
  * Por naturaleza son asíncronas,
