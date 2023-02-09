@@ -8,8 +8,8 @@ import { HooksApp } from './HooksApp' */
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    {/* <CounterWithCustomHook /> */}
+ /*  <React.StrictMode> 
+     <CounterWithCustomHook /> */
     <SimpleForm/>
-  </React.StrictMode>,
+ /* </React.StrictMode>, */
 )
