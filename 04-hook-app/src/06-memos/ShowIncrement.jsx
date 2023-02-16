@@ -9,7 +9,7 @@ console.log('Me volvi a generar');
     <button
       className="btn btn-primary"
       onClick={()=>{
-        increment();
+        increment( 5 );
       }}
     >
       Incrementar
