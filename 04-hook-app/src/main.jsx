@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Layout } from './05-useLayoutEffect/Layout'
+import { CallbackHook } from './06-memos/CallbackHook'
 import { MemoHook } from './06-memos/MemoHook'
 import { Memorize } from './06-memos/Memorize'
 /* 
@@ -24,7 +25,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <FocusScreen/>
     <Layout />
     <Memorize />
-   */
     <MemoHook />
+   */
+    <CallbackHook />
     /* </React.StrictMode>, */
 )
