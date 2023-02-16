@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Layout } from './05-useLayoutEffect/Layout'
+import { MemoHook } from './06-memos/MemoHook'
 import { Memorize } from './06-memos/Memorize'
 /* 
 import FormWithCustomHook from './02-useEffect/FormWithCustomHook' 
@@ -22,7 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <MultiplesCustomHooks />
     <FocusScreen/>
     <Layout />
-   */
     <Memorize />
+   */
+    <MemoHook />
     /* </React.StrictMode>, */
 )
