@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {Layout} from './05-useLayoutEffect/Layout'
+import { Layout } from './05-useLayoutEffect/Layout'
+import { Memorize } from './06-memos/Memorize'
 /* 
 import FormWithCustomHook from './02-useEffect/FormWithCustomHook' 
 import { MultiplesCustomHooks } from './03-examples/MultiplesCustomHooks'
@@ -14,13 +15,14 @@ import { HooksApp } from './HooksApp'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
- /* <React.StrictMode> */
-      /*<CounterWithCustomHook /> 
-      <SimpleForm/>
-      <FormWithCustomHook/>
-     <MultiplesCustomHooks />
-     <FocusScreen/>
-     */
-     <Layout />
- /* </React.StrictMode>, */
+    /* <React.StrictMode> */
+    /*<CounterWithCustomHook /> 
+    <SimpleForm/>
+    <FormWithCustomHook/>
+    <MultiplesCustomHooks />
+    <FocusScreen/>
+    <Layout />
+   */
+    <Memorize />
+    /* </React.StrictMode>, */
 )
