@@ -17,18 +17,24 @@ import { HooksApp } from './HooksApp'
 
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    /* <React.StrictMode> */
-    /*<CounterWithCustomHook /> 
-    <SimpleForm/>
-    <FormWithCustomHook/>
-    <MultiplesCustomHooks />
-    <FocusScreen/>
-    <Layout />
-    <Memorize />
-    <MemoHook />
-    <CallbackHook />
-   */
+import './08-useReducer/intro-reducer';
+
+
+/* ReactDOM.createRoot(document.getElementById('root')).render(
     <Padre />
-    /* </React.StrictMode>, */
-)
+) */
+
+/* <React.StrictMode> */
+
+/*<CounterWithCustomHook />
+<SimpleForm/>
+<FormWithCustomHook/>
+<MultiplesCustomHooks />
+<FocusScreen/>
+<Layout />
+<Memorize />
+<MemoHook />
+<CallbackHook />
+*/
+
+/* </React.StrictMode>, */
