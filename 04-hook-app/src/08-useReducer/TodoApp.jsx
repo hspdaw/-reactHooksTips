@@ -1,4 +1,6 @@
 import { useReducer } from "react"
+import { TodoForm } from "./TodoForm"
+import { TodoList } from "./TodoList"
 import { todoReducer } from "./todoReducer"
 
 const initialState = [
@@ -9,7 +11,17 @@ const initialState = [
     },
     {
         id: new Date().getTime() * 3,
+        description: 'Recolectar la piedra del tiempo',
+        done: false,
+    },
+    {
+        id: new Date().getTime(),
         description: 'Recolectar la piedra del alma',
+        done: false,
+    },
+    {
+        id: new Date().getTime() * 3,
+        description: 'Recolectar la piedra del tiempo',
         done: false,
     }
 ]
@@ -17,7 +29,11 @@ const initialState = [
 
 export const TodoApp = () => {
 
-    const [state, dispatch] = useReducer(todoReducer, initialState)
+    const [todos, dispatch] = useReducer(todoReducer, initialState)
+
+    const handleNewTodo = (todo) => {
+        console.log({ todo })
+    }
 
     return (
         <>
@@ -25,27 +41,10 @@ export const TodoApp = () => {
             <hr />
             <div className="row">
                 <div className="col-7">
-                    <ul className="list-group">
-                        <li className="list-group-item d-flex justify-content-between">
-                            <span className="align-self-center">Item 1</span>
-                            <button className="btn btn-danger">Borrar</button>
-                        </li>
-                    </ul>
+                    <TodoList todos={todos} />
                 </div>
                 <div className="col-5">
-                    <form>
-                        <input
-                            type="text"
-                            placeholder="Qué hacer?"
-                            className="form-control"
-                        />
-                        <button
-                            type="submit"
-                            className=""
-                        >
-                            Agregar
-                        </button>
-                    </form>
+                    <TodoForm onNewTodo={handleNewTodo} />
                 </div>
             </div>
 
