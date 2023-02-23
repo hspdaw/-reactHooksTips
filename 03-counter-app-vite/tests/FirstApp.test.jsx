@@ -19,6 +19,6 @@ describe('Pruebas en <FirstApp/>', () => {
     const title = 'Hola, Soy Vegeta';
     const subTitle = 'Soy un subtitulo';
     const { getAllByText } = render(<FirstApp title={title} subTitle={subTitle} />);
-    expect(getAllByText(subTitle).length).toBe(2);
+    expect(screen.getAllByText(subTitle).length).toBe(2);
   })
 })
