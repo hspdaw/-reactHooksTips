@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {
+    createBrowserRouter,
+    RouterProvider,
+  } from 'react-router'
 import './index.css'
 /* 
 import { Padre } from './07-tarea-memo/Padre'
@@ -21,9 +25,17 @@ import { HooksApp } from './HooksApp'
 import './08-useReducer/intro-reducer';
 import { TodoApp } from './08-useReducer/TodoApp';
 
+const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <TodoApp/>,
+    },
+  ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <TodoApp/>
+    <React.StrictMode>
+    <RouterProvider router={router} />
+    </React.StrictMode>
 )
 
 /* <React.StrictMode> */
