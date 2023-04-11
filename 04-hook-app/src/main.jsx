@@ -1,9 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+//import ReactDOM from 'react-dom/client'
+import { createRoot } from "react-dom/client";
 import {
-    createBrowserRouter,
-    RouterProvider,
-  } from 'react-router'
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 import './index.css'
 /* 
 import { Padre } from './07-tarea-memo/Padre'
@@ -24,19 +27,18 @@ import { HooksApp } from './HooksApp'
 
 import './08-useReducer/intro-reducer';
 import { TodoApp } from './08-useReducer/TodoApp';
+import { MainApp } from './09-useContext/MainApp';
 
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <TodoApp/>,
+      element: <MainApp/>,
     },
   ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
+  createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
-    </React.StrictMode>
-)
+  );
 
 /* <React.StrictMode> */
 
