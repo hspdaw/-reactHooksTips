@@ -3,15 +3,13 @@ import { HomePage } from "./HomePage"
 import { AboutPage } from "./AboutPage"
 import { LoginPage } from "./LoginPage"
 import Navbar from "./Navbar"
+import { UserPorvider } from "./context/UserPorvider"
 
 export const MainApp = () => {
   return (
-    <>
-      <h1>MainApp</h1>
+    <UserPorvider>
       <Navbar />
-
       <hr />
-
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -21,6 +19,6 @@ export const MainApp = () => {
         <Route path="/*" element={<Navigate to="/about" />} />
 
       </Routes>
-    </>
+    </UserPorvider>
   )
 }
