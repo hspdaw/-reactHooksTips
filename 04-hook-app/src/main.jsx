@@ -17,8 +17,9 @@ import CounterWithCustomHook from './01-useState/CounterWithCustomHook'
 import { HooksApp } from './HooksApp'
  */
 
-import './08-useReducer/intro-reducer';
+//import './08-useReducer/intro-reducer';
 //import { TodoApp } from './08-useReducer/TodoApp';
+
 import { MainApp } from './09-useContext/MainApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -28,6 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* </React.StrictMode> */}
   </BrowserRouter>
 )
+
+
 /* <React.StrictMode> */
 
 /*<CounterWithCustomHook />
